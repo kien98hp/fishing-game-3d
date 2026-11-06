@@ -1,0 +1,36 @@
+========================================================
+     THƯ MỤC BACKUP GAME CÂU CÁ 3D (GAME 0411)
+========================================================
+
+1. CÁCH CHẠY GAME:
+------------------
+- Cách 1 (Khuyên dùng - 1 Click):
+  Nhấp đúp chuột vào tệp "Chay_Game.bat". 
+  Trình duyệt web của bạn sẽ tự động mở trang http://localhost:8085/Map.html và tải đầy đủ model 3D.
+
+- Cách 2 (Dùng dòng lệnh):
+  Mở Terminal / PowerShell trong thư mục này và gõ:
+  python cors_server.py
+  Sau đó vào trình duyệt gõ: http://localhost:8085/Map.html
+
+2. DANH SÁCH CÁC TÀI NGUYÊN TRONG THƯ MỤC:
+------------------------------------------
+- Map.html            : Tệp mã nguồn HTML/JS/CSS chính của game (chứa toàn bộ logic Three.js, shading phác thảo, đồ họa giấy, chu kỳ ngày/đêm 6 phút, lửa trại ban đêm, mini-game thanh lực).
+- index.html          : Bản sao của Map.html (dùng làm trang mặc định khi đưa lên máy chủ web hosting).
+- character.glb       : Model 3D nhân vật cầm cần câu đã tích hợp sẵn hệ thống xương và toàn bộ các animation (idle, walk, run, startfish, endfish, stanfish).
+- fish.glb            : Model 3D cá hồi (Ca1) đã rigging xương bơi, dùng cho đàn cá vượt thác và cá cắn câu khi giật lên.
+- fixed_rod.glb       : Model 3D phụ trợ của cần câu.
+- Untitled.blend      : Tệp gốc Blender 3D của toàn bộ mô hình bối cảnh diorama, nhân vật và cá.
+- cors_server.py      : Máy chủ HTTP cục bộ hỗ trợ CORS để trình duyệt tải tệp .glb mượt mà.
+- Chay_Game.bat       : Tệp khởi động nhanh game chỉ bằng 1 cú nhấp đúp chuột.
+
+3. HƯỚNG DẪN ĐIỀU KHIỂN TRONG GAME:
+------------------------------------
+- Bấm phím F          : Bật / tắt chế độ câu cá (giương cần / cất cần).
+- Chuột trái trên sông: Quăng phao câu đến vị trí mong muốn trên mặt nước.
+- Khi cá cắn câu (!)  : Thanh lực xuất hiện ở cạnh dưới màn hình. Nhấp chuột trái liên tục để thanh cam tăng lên chạm mốc xanh, nhân vật sẽ giật cần kéo cá lên!
+- Phím WASD           : Di chuyển nhân vật (giữ Shift để chạy nhanh).
+- Chuột phải / Kéo    : Xoay góc nhìn 3D xung quanh hòn đảo diorama.
+- Cuộn chuột          : Phóng to / thu nhỏ góc nhìn.
+- Nút "Ném bóng vào bia": Thử sức với mini-game ném bóng chày vào các hồng tâm cắm trại.
+========================================================

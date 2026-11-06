@@ -1,0 +1,16 @@
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Blender Full File (da duoc chia nho thanh .part001, .part002, .part003 de vuot qua gioi han 100MB cua GitHub)
+*.blend
+*.blend1
+*.bak
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Vercel Cache
+.vercel/

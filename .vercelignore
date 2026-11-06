@@ -1,0 +1,6 @@
+# Vercel Ignore - Chỉ deploy các tệp web, bỏ qua file nguồn nặng
+source_assets/
+*.blend*
+*.fbx
+*.bat
+*.py
